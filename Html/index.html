@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="w-75 m-auto">
+            <h1 class=" text-muted fw-bold">BOOH MARKE</h1>
+            <div class="border-1 border-end-0 border-start-0  border-dark bg-gradient bg-danger">
+              <input type="text" name="bookName" id="BookName" class="form-control">
+              <input type="url" name="bookUrl" id="BookUrl" class="form-control">
+              <button class="btn btn-outline-success" ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="container">
+   <div class="row gy-2">
+     <div class="col-12">
+     
+      <div class="row">
+        <div class="col-1">
+          <label for="ProductName">name</label>
+          
+         </div>
+         <div class="col-11">
+          <input type="text" name="ProductName" id="ProductName" class=" w-100">
+         </div>
+          
+      </div>
+      </div>
+     <div class="col-12">
+     
+     
+      <label for="CategoryName">category</label>
+      <input type="number" name="CategoryName" id="CategoryName">
+      
+      </div>
+     <div class="col-12">
+     
+      <label for="QUalityName"> quality</label>
+      <input type="text" name="QUalityName" id="QUalityName">
+        
+      </div>
+    
+   </div>
+ </div> -->
+  <div class="w-75 m-auto ">
+    <label for="ProductName">name</label>
+    <input type="text" name="ProductName" id="ProductName" class=" form-control">
+    <div id="div-name-validate" class="  alert-danger text-center  m-auto mt-2 rounded-1"> you should enter name first letter capital ex:Crud</div>
+    <label for="PriceName">price</label>
+    <input type="number" name="PriceName" id="PriceName" class=" form-control">
+    <div id="div-pric-validate" class="  alert-danger text-center  m-auto mt-2 rounded-1">max-length of number 10 </div>
+    <label for="CategoryName">category</label>
+    <input type="text" name="CategoryName" id="CategoryName" class=" form-control">
+    <div id="div-category-validate" class="  alert-danger text-center  m-auto mt-2 rounded-1">input is required</div>
+    <label for="QUalityName"> quality</label>
+    <input type="text" name="QUalityName" id="QUalityName" class=" form-control">
+    <div id="div-quality-validate" class="  alert-danger text-center  m-auto mt-2 rounded-1">input is required </div>
+    <button class="btn btn-danger mt-2" id="changebtn" onclick="z()">ADD Product</button>
+    <br>
+    <br>
+    <div class="w-75 m-auto text-center">
+      <input type="search" name="search" onkeyup="searching()" id="search-id" placeholder=" search...." class="mb-5 w-100 form-control">
+    </div>
+  
+    <table class="table table-striped mt-2 table-dark">
+      <thead id="th-id">
+
+      </thead>
+      <tbody id="table-body">
+
+
+      </tbody>
+    </table>
+
+  </div>
+  <script src="../js/java.js"></script>
+</body>
+
+</html>
